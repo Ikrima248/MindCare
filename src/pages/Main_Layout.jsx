@@ -3,19 +3,23 @@ import { useNavigate, Outlet, useLocation } from "react-router-dom";
 import {
   FaBrain,
   FaChartBar,
-  FaExclamationTriangle,
-  FaBookOpen,
-  FaPhoneAlt,
+  FaGlobe,
+  FaCubes,
+  FaChartLine,
+  FaCircle,
   FaBars,
   FaChevronLeft,
+  FaProjectDiagram,
 } from "react-icons/fa";
 
 const navItems = [
   { label: "Predictor", path: "/predictor", icon: <FaBrain /> },
-  { label: "Comparison", path: "/comparison", icon: <FaChartBar /> },
-  { label: "Risk Factors", path: "/risk-factors", icon: <FaExclamationTriangle /> },
-  { label: "Resources", path: "/resources", icon: <FaBookOpen /> },
-  { label: "Contact", path: "/contact", icon: <FaPhoneAlt /> },
+  { label: "Country Comparison", path: "/country-comparison", icon: <FaGlobe /> },
+  { label: "Bubble Plot", path: "/bubble-plot", icon: <FaCircle /> },
+  { label: "3D Bubble Plot", path: "/3d-bubble-plot", icon: <FaCubes /> },
+  { label: "Trend Analysis", path: "/trend-analysis", icon: <FaChartLine /> },
+  { label: "Violin plot", path: "/violin-plot", icon: <FaChartBar /> },
+  { label: "Parallel plot", path: "/parallel-plot", icon: <FaProjectDiagram /> },
 ];
 
 const MainLayout = () => {
